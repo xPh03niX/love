@@ -92,7 +92,7 @@ z-index: 1;
   $w: (random(80)+40px);
   width: (10*$w)/2;
   height: (7.6*$w)/2;
- overflow: scroll;
+ overflow: hidden;
  background-image:  url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/439415/lips.svg");
   background-size: cover;
     
