@@ -10,7 +10,7 @@ text-shadow: 2px 2px 4px #422;
 position: absolute;
   top: 0%;
   left: 0%;
-height: auto;
+height: 100%;
 width: 100%;
 z-index: 1;
 }
