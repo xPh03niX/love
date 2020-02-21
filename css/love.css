@@ -3,7 +3,7 @@ $angle: 1deg;
 html {background-color: #d22;
   overflow: hidden;}
 
-.container {overflow: hidden;
+.container {overflow: scroll;
   border: 4px solid #e55;
   animation: fade 12s linear forwards;
 text-shadow: 2px 2px 4px #422;
