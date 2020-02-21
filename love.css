@@ -1,0 +1,148 @@
+$angle: 1deg;
+
+html {background-color: #d22;
+  overflow: hidden;}
+
+.container {overflow: hidden;
+  border: 4px solid #e55;
+  animation: fade 12s linear forwards;
+text-shadow: 2px 2px 4px #422;
+position: absolute;
+  top: 0%;
+  left: 0%;
+height: auto;
+width: 100%;
+z-index: 1;
+}
+
+@keyframes fade {
+  0% { background-color: #f00;}
+  100% {background-color: #f88;}
+}
+.heart {
+  opacity: 0;
+  width: 195px;
+  height: 180px;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  background-image: url("http://clipartsy.com/Holidays/Valentines_Day/Valentines_Day/heart_67_linkedin_valentine.svg");
+  background-size: cover;
+  animation: in 3s linear forwards, pulse .3s ease infinite;
+  animation-delay: 10s;  
+  z-index: 16;
+}
+
+
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1);}
+  50% { transform: scale(1.02);}
+  
+}
+
+@keyframes in {
+  0% {opacity: 0;}
+  100% {opacity: .75;}
+  }
+
+
+
+
+.happy1 {
+  font-family: 'Kaushan Script', cursive;
+  position: relative;
+  top: 165px;
+   color: #000;
+  animation: scroll 10s linear forwards;
+  font-size: 400%;
+  z-index: 5;
+}
+
+.happy2 {
+  font-family: 'Kaushan Script', cursive;
+  position: relative;
+  top: 0px;
+   color: #000;
+  animation: scroll 10s linear forwards;
+  font-size: 400%;
+  z-index: 5;
+}
+
+
+@keyframes scroll {
+  0%{ transform: translateY(400px);}
+  100% {transform: translateY(-70px);}
+}
+
+
+.kiss {
+
+    @for $i from 1 through 50 {
+  &:nth-child(#{$i})
+  {    animation: s+($i) 4.5s linear forwards infinite;
+  animation-delay: (-$i*180ms);
+  $x: (random(1440)-250+1px);
+  $y: (random(400)-200+1px);
+  position: absolute;
+  left: $x;
+  top: $y;
+  $w: (random(80)+40px);
+  width: (10*$w)/2;
+  height: (7.6*$w)/2;
+ overflow: hidden;
+ background-image:  url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/439415/lips.svg");
+  background-size: cover;
+    
+
+
+@keyframes s#{$i} {
+   $angle: (random(30));
+  0%{ transform: scale(0) rotateZ($angle+deg) translateY(0);}
+  7% { transform: scale(.1) rotateZ($angle+deg) translateY(0);}
+  20% {opacity: 1; transform: scale(.1) rotateZ($angle+deg) translateY(0); }
+  55% {opacity: 0; transform: scale(1) rotateZ($angle+deg) translateY(10px); }
+
+  100% {opacity: 0; transform: scale(1) rotateZ($angle+deg) translateY(0); }
+    }}}}
+
+.float {
+  position: relative;
+  top: -10px;
+  left: 30px;
+  animation: float 20s linear infinite;
+}
+@keyframes float {
+  0% {transform: translateY(50px);}
+  100% {transform: translateY(-510px);}
+}
+.float1 {
+  position: relative;
+  top: 50px;
+  left: 110px;
+  animation: float1 28s linear infinite 4s;
+}
+@keyframes float1 {
+  0% {transform: translateY(50px);}
+  100% {transform: translateY(-510px);}
+}
+.float2 {
+  position: relative;
+  top: 50px;
+  left: 770px;
+  animation: float2 24s linear infinite 1s;
+}
+@keyframes float2 {
+  0% {transform: translateY(50px);}
+  100% {transform: translateY(-510px);}
+}
+.float3 {
+  position: relative;
+  top: 50px;
+  left: 850px;
+  animation: float3 18s linear infinite 10s;
+}
+@keyframes float3 {
+  0% {transform: translateY(50px);}
+  100% {transform: translateY(-510px);}
+}
