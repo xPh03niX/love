@@ -66,6 +66,7 @@ z-index: 1;
    color: #000;
   animation: scroll 10s linear forwards;
   font-size: 400%;
+  margin-right: 3%;
   z-index: 5;
 }
 
