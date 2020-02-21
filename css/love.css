@@ -62,7 +62,7 @@ z-index: 1;
 .happy2 {
   font-family: 'Kaushan Script', cursive;
   position: relative;
-  top: 0px;
+  top: 3%;
    color: #000;
   animation: scroll 10s linear forwards;
   font-size: 400%;
